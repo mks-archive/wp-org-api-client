@@ -8,7 +8,8 @@ define( 'WP_ORG_API_CLIENT_MIN_PHP', '5.2.4' );
 define( 'WP_ORG_API_CLIENT_MIN_WP', '3.2' );
 
 require( WP_ORG_API_CLIENT_DIR . '/classes/class-plugin-info-api-client.php' );
-require( WP_ORG_API_CLIENT_DIR . '/classes/class-plugin-list-slugs-api-client.php' );
+require( WP_ORG_API_CLIENT_DIR . '/classes/class-plugin-slugs-api-client.php' );
+require( WP_ORG_API_CLIENT_DIR . '/classes/class-api-client.php' );
 //require( WP_ORG_API_CLIENT_DIR . '/classes/class-transients.php');
 //require( WP_ORG_API_CLIENT_DIR . '/classes/class-plugin.php');
 

@@ -3,7 +3,7 @@
 /**
  * TODO: Need to test this one first.
  */
-class WordPress_Org_Svn_Plugin_List_Slugs_Parser extends RESTian_Parser_Base {
+class WordPress_Org_Plugin_Slugs_Parser extends RESTian_Parser_Base {
   /**
    * Returns an object or array of stdClass objects from a string containing valid JSON
    *

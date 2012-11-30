@@ -1,10 +1,10 @@
 <?php
 
-if ( ! class_exists( 'WordPress_Org_Plugins_Info_API_Client' ) ) {
+if ( ! class_exists( 'WordPress_Org_Plugin_Info_API_Client' ) ) {
   /**
    *
    */
-  class WordPress_Org_Plugins_Info_API_Client extends RESTian_Client {
+  class WordPress_Org_Plugin_Info_API_Client extends RESTian_Client {
 
     /**
      *

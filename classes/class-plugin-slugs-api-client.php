@@ -1,10 +1,10 @@
 <?php
 
-if ( ! class_exists( 'WordPress_Org_Plugins_List_API_Client' ) ) {
+if ( ! class_exists( 'WordPress_Org_Plugin_Slugs_API_Client' ) ) {
   /**
    *
    */
-  class WordPress_Org_Plugins_List_Slugs_API_Client extends RESTian_Client {
+  class WordPress_Org_Plugin_Slugs_API_Client extends RESTian_Client {
 
     /**
      *
@@ -13,8 +13,8 @@ if ( ! class_exists( 'WordPress_Org_Plugins_List_API_Client' ) ) {
 
       RESTian::register_parser(
         'restian-custom/svn-repo-list',
-        'WordPress_Org_Svn_Plugin_List_Slugs_Parser',
-        dirname( __FILE__ ) . '/class-svn-plugin-list-slugs-parser.php'
+        'WordPress_Org_Plugin_Slugs_Parser',
+        dirname( __FILE__ ) . '/class-plugin-slugs-parser.php'
       );
 
       $this->base_url = 'http://plugins.svn.wordpress.org';
