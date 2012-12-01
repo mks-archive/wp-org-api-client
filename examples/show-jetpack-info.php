@@ -1,12 +1,12 @@
 <?php
-	header( 'Content-type: text/plain' );
-  if ( ! defined( 'ABSPATH' ) )
+  if ( ! defined( 'ABSPATH' ) ) {
+    header( 'Content-type: text/plain' );
     require_once dirname( __FILE__ ) . '/../../../../wp-load.php';
-
-/**
- * @var WordPress_Org_Plugin_Info_API_Client $api
- */
-$api = WordPress_Org_API_Client::get_new( 'plugin_info' );
-$response = $api->get_plugin_information( 'jetpack' );
-print_r( $response->error );
-print_r( $response->data );
+  }
+  /**
+   * @var WordPress_Org_Plugin_Info_API_Client $api
+   */
+  $api = WordPress_Org_API_Client::get_new( 'plugin_info' );
+  $response = $api->get_plugin_information( 'jetpack' );
+  print_r( $response->error );
+  print_r( $response->data );

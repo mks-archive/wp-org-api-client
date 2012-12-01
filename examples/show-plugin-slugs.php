@@ -1,7 +1,8 @@
 <?php
-	header( 'Content-type: text/plain' );
-  if ( ! defined( 'ABSPATH' ) )
+  if ( ! defined( 'ABSPATH' ) ) {
+    header( 'Content-type: text/plain' );
     require_once dirname( __FILE__ ) . '/../../../../wp-load.php';
+  }
 
   /**
    * @var WordPress_Org_Plugin_Slugs_API_Client $api
